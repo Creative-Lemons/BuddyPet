@@ -1,0 +1,15 @@
+.main {
+  width: 65%;
+}
+
+#nameErr,
+#passwordErr,
+#confirmPasswordErr,
+#emailErr {
+  color: #e76362;
+  display: none;
+}
+
+#shelterDivs {
+  display: none;
+}
