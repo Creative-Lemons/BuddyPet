@@ -19,56 +19,64 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="main container">
-        <form id="form" method="POST" onsubmit="return validation()">
+        <form method="POST" onsubmit="return validation()">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="fnameInput">First Name</label>
-                    <input type="text" class="form-control form-control-sm" name="name" id="fnameInput" placeholder="First Name" onkeyup="nameValidaton(this)">
-                    <div class="invalid-feedback" id="nameErr">First name must be min 3 charecters.</div>
+                    <input type="text" class="form-control form-control-sm" name="name" id="fnameInput" placeholder="First Name" onkeyup="nameValidate(this)">
+                    <div class="invalid-feedback" id="nameErr">First name must be min 2 charecters.</div>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="nameInput">Last Name</label>
-                    <input type="text" class="form-control form-control-sm" name="name" id="nameInput" placeholder="Enter Name">
+                    <label for="lnameInput">Last Name</label>
+                    <input type="text" class="form-control form-control-sm" name="name" id="lnameInput" placeholder="Enter Name">
+                    <div class=" invalid-feedback" id="lnameErr">Last name must be min 2 charecters.</div>
+
                 </div>
             </div>
             <div class="form-group">
                 <label for="emailInput">Email address</label>
-                <input type="email" class="form-control form-control-sm" name="email" id="emailInput" placeholder="Enter email" onkeyup="emailValidaton(this)">
+                <input type="email" class="form-control form-control-sm" name="email" id="emailInput" placeholder="Enter email" onkeyup="emailValidate(this)">
                 <div class="invalid-feedback" id="emailErr">Enter valid email address.</div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="passowrdInput">Password</label>
-                    <input type="password" class="form-control form-control-sm" name="password" id="passwordInput" placeholder="Password" onkeyup="passValidation(this)">
+                    <input type="password" class="form-control form-control-sm" name="password" id="passwordInput" placeholder="Password" onkeyup="passwordValidate(this)">
                     <div class="invalid-feedback" id="passwordErr">Password must be min 4 alpha numeric charecters.</div>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="confirmPassowrdInput">Password</label>
-                    <input type="password" class="form-control form-control-sm" name="password" id="confirmPassowrdInput" placeholder="Password" onkeyup="confirmPassValidation(this)">
-                    <div class="invalid-feedback" id="confirmPasswordErr">Passwords do not match.</div>
+                    <label for="cPassInput">Confirm Password</label>
+                    <input type="password" class="form-control form-control-sm" name="cPass" id="cPassInput" placeholder="Retype Password" onkeyup="confirmPasswordValidate(this)">
+                    <div class=" invalid-feedback" id="cPassErr">Passwords do not match.</div>
                 </div>
             </div>
+
             <div class="form-group">
                 <label for="phoneInput">Phone</label>
-                <input type="text" class="form-control form-control-sm" name="phone" id="phoneInput" placeholder="Phone">
+                <input type="text" class="form-control form-control-sm" name="phone" id="phoneInput" placeholder="Phone" onkeyup="phoneValidate(this)" value="+45 ">
+                <div class="invalid-feedback" id="phoneErr">Enter valid Phone number.</div>
+
             </div>
+
             <div class="form-group">
-                <label for="streetInput">Street</label>
-                <input type="text" class="form-control form-control-sm" name="street" id="streetInput" placeholder="Enter street">
+                <label>Address</label>
+                <div class="form-row">
+                    <div class="form-group col-md-9">
+                        <input type="text" class="form-control form-control-sm" name="street" id="streetInput" placeholder="Street name">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" class="form-control form-control-sm" name="streetno" id="streetnolInput" placeholder="Street no">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control form-control-sm" name="postalcode" id="postalcodeInput" placeholder="Postalcode">
+                    </div>
+                    <div class="form-group col-md-7">
+                        <input type="text" class="form-control form-control-sm" name="city" id="cityInput" placeholder="City">
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="streetnolInput">Street No</label>
-                <input type="text" class="form-control form-control-sm" name="streetno" id="streetnolInput" placeholder="Enter street no">
-            </div>
-            <div class="form-group">
-                <label for="postalcodeInput">Postal Code</label>
-                <input type="text" class="form-control form-control-sm" name="postalcode" id="postalcodeInput" placeholder="Postalcode">
-            </div>
-            <div class="form-group">
-                <label for="cityInput">City</label>
-                <input type="text" class="form-control form-control-sm" name="city" id="cityInput" placeholder="City">
-            </div>
+
             <div class="form-group">
                 <label for="memberTypeInput">You are :</label>
                 <select class="form-control form-control-sm" name="memberType" id="memberTypeInput" onchange="handleChange()">
@@ -78,7 +86,6 @@ if (isset($_POST['submit'])) {
             </div>
 
             <div id="shelterDivs" class="shelterDivs">
-
                 <div class="form-group">
                     <label for="shelterName">Shelter Name</label>
                     <input type="text" class="form-control form-control-sm" name="shelterName" id="shelterName" placeholder="Shelter name">
@@ -92,12 +99,14 @@ if (isset($_POST['submit'])) {
                     <input type="file" class="form-control-file form-control-sm" name="image" id="image">
                 </div>
             </div>
-            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" name="submit" class="btn btn-primary btn-lg btn-block submit-btn">Submit</button>
         </form>
     </div>
 
-    <script src="test.js"></script>
 
+
+    <!-- <script src="t.js"></script> -->
+    <script src="test.js"></script>
 </body>
 
 </html>

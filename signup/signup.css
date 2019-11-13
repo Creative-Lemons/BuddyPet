@@ -5,6 +5,8 @@
 #nameErr,
 #passwordErr,
 #confirmPasswordErr,
+#cPassErr,
+#phoneErr,
 #emailErr {
   color: #e76362;
   display: none;
@@ -12,4 +14,9 @@
 
 #shelterDivs {
   display: none;
+}
+
+.submit-btn {
+  height: 40px;
+  color: #000;
 }
