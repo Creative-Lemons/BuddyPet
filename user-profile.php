@@ -22,18 +22,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item active mr-4">
                         <a class="nav-link" href="#">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-4">
                         <a class="nav-link" href="#">Quiz</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-4">
                         <a class="nav-link" href="#">Pet</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-4">
                         <a class="nav-link" href="#">Shelters</a>
                     </li>
                     <li class="nav-item">
@@ -55,11 +55,12 @@
                 <div class="row">
                     <div class="col">
                         <div>
-                            <img src="image/dog-home.jpg" class="img-fluid img-thumbnail img-radius" alt="Responsive image">
+                            <img src="image/dog-home.jpg" class="img-fluid img-radius" alt="Responsive image">
                         </div>
                     </div>
                     <div class="col border">
                         <div class="user-info pt-5 text-left">
+                            <p class="font-weight-bold">Birthday: <a class="ml-2">15.8.1996.</a></p>
                             <p class="font-weight-bold">Email: <a class="ml-2">jeppe@gmail.com</a></p>
                             <p class="font-weight-bold">Phone: <a class="ml-2">+ 45 22 55 77 88</a></p>
                             <p class="font-weight-bold">Address: <a class="ml-2">Tøborgvej 84 Vedbæk, 2900</a></p>
