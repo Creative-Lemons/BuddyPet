@@ -1,5 +1,11 @@
-.main {
-  width: 65%;
+.signup-div {
+  width: 45%;
+  padding: 4%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  background-color: #feefd4;
+  color: #969191;
+  border-radius: 10%;
 }
 
 #nameErr,
@@ -12,11 +18,21 @@
   display: none;
 }
 
+.form-control {
+  border: 2px solid #675444;
+  border-radius: 20px;
+}
+
+.required {
+  color: #e76362;
+}
+
 #shelterDivs {
   display: none;
 }
 
 .submit-btn {
   height: 40px;
-  color: #000;
+  color: white;
+  border-radius: 20px;
 }
