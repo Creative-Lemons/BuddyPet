@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#">Shelters</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign up</a>
+                        <a class="nav-link" href="#">Sign in</a>
                     </li>
                 </ul>
             </div>

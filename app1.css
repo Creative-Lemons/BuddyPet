@@ -29,6 +29,8 @@
         font-size: 1.2em;
     }
 
+    /* user profile */
+
     .parallax {
         /* The image used */
         background-image: url('image/dog-home.jpg');      
@@ -99,3 +101,33 @@
         background-color: white;
         height: 0.2vh;
     }
+
+
+     /* pet profile */
+
+     .pet-info{
+        font-size: 1.4em;
+        color: #675444;
+     }
+
+     .available-text{
+         color: black;
+     }
+
+     .font-awsome{
+         color: green;
+     }
+
+     .paw{
+         color: #675444;
+     }
+
+     .border-pet-history{
+        background-color: #FEEFD4;
+        border-radius: 2%;  
+     }
+
+     .button-pet{
+         width: 8%;
+         font-size: 1.2em;
+     }
