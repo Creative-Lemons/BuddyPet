@@ -29,6 +29,24 @@
         font-size: 1.2em;
     }
 
+    .parallax {
+        /* The image used */
+        background-image: url('image/dog-home.jpg');      
+        /* Set a specific height */
+        height: 500px;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .border-user-info{
+        border-radius: 2%;
+        background-color: #FEEFD4;
+    }
+
     .img-radius{
         border-radius: 3%;
     }
@@ -40,7 +58,7 @@
 
     .border{
         border-radius: 3%;
-        background-color: #FEEFD4;
+        background-color: white;
     }
 
     .card-color{

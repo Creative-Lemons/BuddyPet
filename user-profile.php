@@ -46,24 +46,26 @@
     <!-- Full Page Image Header with Vertically Centered Content -->
     <main>
 
-        <section>
-            <div class="m-4">
+        <section class="parallax pt-5">
+            <!--<div class="m-4">
                 <h2 class="text-center font-weight-bold"> Jeppe Anan </h2>
-            </div>
+            </div>-->
 
-            <div class="container">
+            <div class="container border-user-info p-4">
                 <div class="row">
                     <div class="col">
                         <div>
-                            <img src="image/dog-home.jpg" class="img-fluid img-radius" alt="Responsive image">
+                            <img src="image/user-profile.jpg" class="img-fluid img-radius" alt="Responsive image">
                         </div>
                     </div>
                     <div class="col border">
-                        <div class="user-info pt-5 text-left">
-                            <p class="font-weight-bold">Birthday: <a class="ml-2">15.8.1996.</a></p>
+                        <div class="user-info pt-4 text-left">
+                            <h2 class="text-center font-weight-bold"> Jeppe Anan </h2>
+                            <hr>
+                            <p class="font-weight-bold">Age: <a class="ml-2">25 year old</a></p>
                             <p class="font-weight-bold">Email: <a class="ml-2">jeppe@gmail.com</a></p>
                             <p class="font-weight-bold">Phone: <a class="ml-2">+ 45 22 55 77 88</a></p>
-                            <p class="font-weight-bold">Address: <a class="ml-2">Tøborgvej 84 Vedbæk, 2900</a></p>
+                            <p class="font-weight-bold">Address: <a class="ml-2">Tøborgvej 84, Vedbæk, 2900</a></p>
                             <button type="button" class="btn btn-primary">Edit</button>
                         </div>
                     </div>
@@ -108,16 +110,16 @@
                         <p class="fotter-text">We help people and pets find each other and live happier lives together. That's our mission. It's why we exist.</p>
                     </div>
                     <div class="col-sm ml-5">
-                    <h1 class="fotter-title mt-3 mb-3"><i class="fas fa-address-book mr-2"></i>Contact us</h1>
-                    <p class="fotter-text mb-2"><i class="fas fa-phone mr-2"></i>(45) 45 36 89 54</p>
-                    <p class="fotter-text mb-2"><i class="fas fa-envelope mr-2"></i>email@yoursite.com</p>
-                    <p class="fotter-text"><i class="fas fa-map-marker-alt mr-2"></i>Pet Street 123 – Copenhagen</p>
+                        <h1 class="fotter-title mt-3 mb-3"><i class="fas fa-address-book mr-2"></i>Contact us</h1>
+                        <p class="fotter-text mb-2"><i class="fas fa-phone mr-2"></i>(45) 45 36 89 54</p>
+                        <p class="fotter-text mb-2"><i class="fas fa-envelope mr-2"></i>email@yoursite.com</p>
+                        <p class="fotter-text"><i class="fas fa-map-marker-alt mr-2"></i>Pet Street 123 – Copenhagen</p>
                     </div>
                     <div class="col-sm ml-5">
-                    <h1 class="fotter-title mt-3 mb-3"><i class="fas fa-hashtag mr-2"></i>Social Media</h1>
-                    <p class="fotter-text mb-2"><i class="fab fa-facebook-square mr-2"></i>Facebook</p>
-                    <p class="fotter-text mb-2"><i class="fab fa-instagram mr-2"></i>Instagram</p>
-                    <p class="fotter-text"><i class="fab fa-linkedin mr-2"></i>Linkedin</p>
+                        <h1 class="fotter-title mt-3 mb-3"><i class="fas fa-hashtag mr-2"></i>Social Media</h1>
+                        <p class="fotter-text mb-2"><i class="fab fa-facebook-square mr-2"></i>Facebook</p>
+                        <p class="fotter-text mb-2"><i class="fab fa-instagram mr-2"></i>Instagram</p>
+                        <p class="fotter-text"><i class="fab fa-linkedin mr-2"></i>Linkedin</p>
                     </div>
                 </div>
             </div>
