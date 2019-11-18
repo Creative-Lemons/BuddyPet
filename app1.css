@@ -131,3 +131,21 @@
          width: 8%;
          font-size: 1.2em;
      }
+
+     .border-shelter{
+         background-color: #FEEFD4;
+         border-radius: 2%;
+     }
+
+     .shelter-icon{
+         color: black;
+     }
+
+     .border-shelter-info{
+        border-radius: 2%;
+        background-color: white;
+     }
+
+     .background{
+         background-color: #F5F5F5;
+     }
