@@ -46,10 +46,13 @@
     <!-- Full Page Image Header with Vertically Centered Content -->
     <main>
 
+    <section class="text-center pt-5 pb-4">
+            <p class="title-text-pet1">- OUR SHELTERS -</p>
+            <p class="font-weight-bold title-text-pet">Shelters that we work with</p>
+            <i class="fas fa-paw paw-title"></i>
+        </section>
+
         <section>
-            <div class="m-4 mt-5">
-                <h2 class="text-center font-weight-bold"> Shelters that we work with</h2>
-            </div>
 
             <div class="container p-4">
                 <div class="row pr-3">
@@ -58,13 +61,13 @@
                             <img src="image/dyrevaernet.jpg" class="img-fluid img-radius" alt="Responsive image">
                         </div>
                     </div>
-                    <div class="col border-shelter">
+                    <div class="col">
                         <div class="pet-info text-left p-3">
-                            <h2 class="text-center font-weight-bold available-text"><i class="fas fa-paw paw mr-2"></i>Dyrevaernet<i class="fas fa-paw paw ml-2"></i></h2>
+                            <h2 class="font-weight-bold available-text">Dyrevaernet</h2>
                             <hr>
                             <p class="fotter-text mb-2 shelter-icon"><i class="fas fa-map-marker-alt mr-2 shelter-icon"></i>Islevdalvej 85, 2610 Rødovre</p>
                             <p class="fotter-text mb-2 shelter-icon"><i class="fas fa-phone mr-2 shelter-icon"></i>(45) 44 94 66 95</p>
-                            <p>Dyreværnet is Denmarks oldest animal welfare organization established in 1898. It is also the only animal welfare organization in Denmark with a NO-KILL policy.</p>
+                            <p>Dyreværnet is Denmarks oldest animal welfare organization established in 1898. It is also the only organization in Denmark with a NO-KILL policy.</p>
                             <button type="button" class="btn btn-primary btn-ghost-bordered center-block">Visit site</button>
                         </div>
                     </div>
@@ -73,6 +76,7 @@
 
         </section>
 
+        <section class="pt-3 about-pet-background">
         <div class="container p-4">
             <div class="row pr-3">
                 <div class="col">
@@ -80,9 +84,9 @@
                         <img src="image/dyrenes-beskyttelse.jpg" class="img-fluid img-radius" alt="Responsive image">
                     </div>
                 </div>
-                <div class="col border-shelter">
+                <div class="col">
                     <div class="pet-info text-left p-3">
-                        <h2 class="text-center font-weight-bold available-text"><i class="fas fa-paw paw mr-2"></i>Dyrenes Beskyttelse<i class="fas fa-paw paw ml-2"></i></h2>
+                        <h2 class="font-weight-bold available-text">Dyrenes Beskyttelse</h2>
                         <hr>
                         <p class="fotter-text mb-2 shelter-icon"><i class="fas fa-map-marker-alt mr-2 shelter-icon"></i>Store Landevej 33, 5592 Ejby</p>
                         <p class="fotter-text mb-2 shelter-icon"><i class="fas fa-phone mr-2 shelter-icon"></i>(45) 88 77 43 00</p>
@@ -92,7 +96,7 @@
                 </div>
             </div>
         </div>
-
+        </section>
         </section>
 
         <div class="container p-4">
@@ -102,9 +106,9 @@
                         <img src="image/dansk-dyreværn-aalborg.jpg" class="img-fluid img-radius" alt="Responsive image">
                     </div>
                 </div>
-                <div class="col border-shelter">
+                <div class="col">
                     <div class="pet-info text-left p-3">
-                        <h2 class="text-center font-weight-bold available-text"><i class="fas fa-paw paw mr-2"></i>Dansk Dyreværn Aalborg<i class="fas fa-paw paw ml-2"></i></h2>
+                        <h2 class="font-weight-bold available-text">Dansk Dyreværn Aalborg</h2>
                         <hr>
                         <p class="fotter-text mb-2 shelter-icon"><i class="fas fa-map-marker-alt mr-2 shelter-icon"></i>Råhøj 40, 9240 Nibe</p>
                         <p class="fotter-text mb-2 shelter-icon"><i class="fas fa-phone mr-2 shelter-icon"></i>(45) 98 34 12 33</p>
