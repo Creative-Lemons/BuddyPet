@@ -1,0 +1,226 @@
+body{
+font-family: 'Questrial', sans-serif;
+}
+
+  /*-----------------------------------Title-----------------------------------*/
+
+.title {
+  font-family: 'Quicksand', sans-serif;
+  color: #222;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-family: 'Quicksand', sans-serif;
+  color:#484848;
+  font-weight: bold;
+
+}
+
+.title-dash {
+  color: rgb(33,131,128,0.7);
+}
+
+.title-paw {
+  color: rgb(33,131,128,0.7);
+  font-size: 17px;
+}
+
+  /*-----------------------------------Navigation-----------------------------------*/
+
+.navbar{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: regular;
+    background-color: #F9BE4F;
+    height: 12vh;
+
+}
+
+.logo-container{
+  width: 7vw;
+  height: 10vh;
+  background-image: url('image/logo3.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar a{
+    color:white;
+    font-size: 1.2em;
+}
+
+  /*-----------------------------------Header-----------------------------------*/
+
+.masthead {
+  height: 85vh;
+  min-height: 500px;
+  background-image: url('image/hand-paw.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.masthead-opacity{
+  height: 85vh;
+  min-height: 500px;
+  background-color: rgba(20, 19, 19, 0.233);
+
+}
+
+.card-header-box{
+  background-color: rgb(107,95,95,0.30);
+  border-radius: 20px;
+  padding-bottom: 10%;
+  border: none;
+  width: 30vw;
+}
+
+.card-text {
+  text-align: left;
+  
+}
+
+.card-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  font-size: 2.6em;
+  line-height: 115%;
+  color: white;
+}
+
+.card-text {
+  color: #DDDCDC;
+}
+
+.read-more-btn{
+  width: 13vw;
+  background-color: #218380;
+  border:none;
+  border-radius: 20px;
+  font-weight: 550; 
+}
+
+/* .bg-card-features{
+  height: 85vh;
+  min-height: 500px;
+  background-image: url('image/card-css.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+  /*-----------------------------------Services-----------------------------------*/
+
+.container-features {
+  margin-top: 2%;
+}
+
+.card-columns {
+  margin-top: 3%;
+}
+
+.card-features {
+  background-color: #218380;
+  height: 40vh;
+  border-radius: 20px;
+}
+
+.feature-icon {
+  color: white;
+  font-size: 50px;
+}
+
+.card-feature-title {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.card-feature-text {
+  color: #DDDCDC;
+}
+
+/* .banner-quiz {
+  height: 30vh;
+  background-image: url('image/paws.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+} */
+
+.banner-quiz {
+  margin-top: 2%;
+  /* The image used */
+  background-image: url('image/paws.jpg');
+
+  /* Set a specific height */
+  height: 30vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-quiz-opacity{
+  height: 30vh;
+  background-color: rgb(107,95,95,0.30);
+}
+
+.banner-quiz-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: white;
+}
+
+.btn-quiz-home {
+  color: white;
+  background-color: #F9BE4F;
+  border:none;
+}
+
+  /*-----------------------------------Testimonials-----------------------------------*/
+
+.fa-quote-left {
+  color: #218380;
+}
+
+
+/*-----------------------------------Footer-----------------------------------*/
+
+footer{
+  background-color: #333333;
+}
+
+.fotter-title-name{
+  color: #FFEF5E;
+  font-size: 1em;
+}
+
+.fotter-title{
+  color: white;
+  font-size: 0.8em;
+}
+
+.fotter-text{
+  color: #c2c2c2;
+  font-size: 0.7em;
+}
+
+.copyright{
+  color: #c2c2c2;
+  font-size: 0.7em;
+}
+
+
+
+hr{
+  background-color: #7a7a7a;
+  height: 0.001vh;
+}
+
+
