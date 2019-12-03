@@ -353,4 +353,17 @@ footer{
         opacity: 1;
         transform: rotateZ(-0deg);
       }
-      
+
+      /*-----------------------------------signup-----------------------------------*/
+
+      .signup-image{
+        background: url("image/signup.jpg");
+        background-size: cover;
+        width: 100%;
+        border-radius: 20px 0px 0px 20px;
+        background-position: bottom;
+      }
+
+      .signup-form{
+        border-radius: 0px 20px 20px 0px;
+      }
