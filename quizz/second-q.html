@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../quiz.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial|Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>BuddyPet</title>
+  </head>
+  <body>
+    <!------------------------------ Section: Navigation ------------------------------>
+    <nav class="navbar navbar-expand-lg shadow sticky-top">
+      <div class="container">
+        <div class="logo-container navbar-brand">
+          <h3 class="logo">Buddy pet</h3>
+        </div>
+        <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./first-q.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shelters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="quiz-container">
+        <img id="host" src="../image/host.png" alt="host" />
+        <div class="host-quotes">
+          <img id="secondq" src="../image/secondq.png" alt="secondq" />
+          <div class="answ1"><a href="third-q.html">Caring</a></div>
+          <div class="answ1"><a href="third-q.html">Logical</a></div>
+        </div>
+      </div>
+      <div class="container bar-container">
+        <!-- Orange -->
+        <div class="progress">
+          <div
+            class="progress-bar bg-warning progress-bar-striped progress-bar-animated .animation-bar2"
+            style="width:50%"
+          >
+            50%
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-4 text-left">
+            <h2 class="fotter-title-name mt-3 mb-3">We are Creative Lemons</h2>
+            <p class="fotter-text">
+              We help people and pets find each other and live happier lives
+              together. It's our mission. It's why we exist.
+            </p>
+            <div class="text-left">
+              <i class="fab fa-facebook-square social-media mr-1"></i>
+              <i class="fab fa-instagram social-media mr-1"></i>
+              <i class="fab fa-linkedin social-media"></i>
+            </div>
+          </div>
+          <div class="col-3">
+            <h2 class="fotter-title mt-3 mb-3">Contact us</h2>
+            <p class="fotter-text mb-2">
+              <i class="fas fa-phone mr-2"></i>(45) 45 36 89 54
+            </p>
+            <p class="fotter-text mb-2">
+              <i class="fas fa-envelope mr-2"></i>email@yoursite.com
+            </p>
+            <p class="fotter-text">
+              <i class="fas fa-map-marker-alt mr-2"></i>Pet Street 123 –
+              Copenhagen
+            </p>
+          </div>
+          <div class="col-3">
+            <h2 class="fotter-title mt-3 mb-3">Subscribe to our newsletter</h2>
+
+            <div class="row form-group ">
+              <div class="input-group mt-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  value="Enter your email"
+                />
+                <span class="input-group-btn"
+                  ><button type="button" class="btn btn-success btn-subscribe">
+                    Subscribe
+                  </button></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 text-center">
+            <p class="copyright">&copy; Copyright 2019 Creative Lemons</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
