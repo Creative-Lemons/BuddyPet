@@ -69,50 +69,7 @@
 .navbar a:hover{
   font-size: 1.02em;
 }
-    /* user profile */
-
-    .parallax {
-        /* The image used */
-        background-image: url('image/dog-home.jpg');      
-        /* Set a specific height */
-        height: 500px;
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .border-user-info{
-        border-radius: 2%;
-        background-color: #FEEFD4;
-    }
-
-    .img-radius{
-        border-radius: 3%;
-    }
-
-    .user-info{
-        font-size: 1.4em;
-        color: #675444;
-    }
-
-    .border{
-        border-radius: 3%;
-        background-color: white;
-    }
-
-    .card-color{
-        background-color: #FEEFD4;
-        color: #675444;
-        font-size: 1.5em;
-    }
-
-    .img-size{
-        width: 100%;
-        max-height: 32vh;
-    }
+   /*-----------------------------------User profile-----------------------------------*/
 
 
     /*-----------------------------------button-----------------------------------*/
