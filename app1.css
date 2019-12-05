@@ -7,9 +7,20 @@
         font-weight: bold;
     }
 
+    h2{
+      font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+
     h3{
       font-family: 'Quicksand', sans-serif;
         font-weight: bold;
+    }
+
+    h4{
+      font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        font-size: 1.4em;
     }
     
     p{
@@ -190,6 +201,27 @@ footer{
 
      /* pet profile */
 
+     /* #pet-profile {
+      width: 15em;
+      height: 15em;
+    
+      border-radius: 50%;
+      margin: 1em auto;
+      background-image: url(./image/golden-retriever.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .container-pet-popup{
+      margin: 4em auto;
+      max-width: 80%;
+    }
+
+    .vl {
+      border-left: 3px solid green;
+      height: 50%;
+    } */
+      
      .title-text-pet{
     font-size: 2.5em;
     margin-bottom: 0;
@@ -202,11 +234,16 @@ footer{
 
      .pet-info{
         font-size: 1.3em;
-        color: #675444;
+        color: black;
      }
 
      .available-text{
          color: black;
+         font-size: 1em;
+     }
+
+     .img-pet-radius{
+       border-radius: 20px;
      }
 
      .font-awsome{
