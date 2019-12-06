@@ -129,12 +129,12 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="card-body card-text col-md-6">
-              <p class="card-title text-center">Find your buddy</p>
+              <p class="card-title text-left">Find your buddy</p>
               <p class="card-text">
-                We will guide you through this fantastic experience of finding
+                We will guide you through this fantastic<br> experience of finding
                 your match!
               </p>
-              <div class="text-center">
+              <div class="text-left">
                 <button type="button" class="btn btn-primary read-more-btn">
                   Read more
                 </button>
@@ -162,7 +162,7 @@
             <div class="card-body show-on-scroll">
               <div class="inline-photo show-on-scroll mt-2">
                 <i class="fas fa-question feature-icon mt-3"></i>
-                <p class="card-feature-title">1.Take the quiz</p>
+                <p class="card-feature-title">1. Take the quiz</p>
                 <p class="card-feature-text text-justify p-3">
                   This is a tool for adopters to identify pets that will be a
                   truly great fit for their personality, lifestyle and
@@ -177,7 +177,7 @@
             <div class="card-body show-on-scroll">
               <div class="inline-photo show-on-scroll mt-2">
                 <i class="fas fa-home feature-icon mt-3"></i>
-                <p class="card-feature-title">2.Find the Shelter</p>
+                <p class="card-feature-title">2. Find the Shelter</p>
                 <p class="card-feature-text text-justify p-3">
                   We provide a platform for diffrent shelters to register their
                   available pets to be adopted. People can reach them easly.
@@ -191,7 +191,7 @@
             <div class="card-body show-on-scroll ">
               <div class="inline-photo show-on-scroll mt-2">
                 <i class="far fa-calendar-alt feature-icon mt-3"></i>
-                <p class="card-feature-title">3.Schedule a visit</p>
+                <p class="card-feature-title">3. Schedule a visit</p>
                 <p class="card-feature-text text-justify p-3">
                   If you feel like visiting a shelter and choosing your pet in
                   person, this is something for you. Your welcome to do so.
@@ -423,7 +423,7 @@
         window.requestAnimationFrame ||
         // IE Fallback
         function(callback) {
-          window.setTimeout(callback, 3000 / 60);
+          window.setTimeout(callback, 1000);
         };
       var elementsToShow = document.querySelectorAll(".show-on-scroll");
       function loop() {
