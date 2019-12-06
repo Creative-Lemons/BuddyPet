@@ -52,11 +52,34 @@ body {
 .navbar a {
   color: white;
   font-size: 1em;
+  font-family: "Quicksand", sans-serif;
 }
 
 .navbar a:hover {
   font-size: 1.02em;
 }
+
+/* .nav-nav{
+  position: relative;
+}
+
+.icon-main-nav {
+	font-size: 35px;
+  color: violet;
+	position: absolute;
+  top: 15px;
+  z-index: 0;
+} */
+
+.icon-nav{
+  color: rgb(33, 131, 128, 0.7);
+}
+
+.nav-weight{
+  font-weight: bold;
+}
+
+
 
 /*-----------------------------------Header-----------------------------------*/
 

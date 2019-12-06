@@ -1,106 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Questrial|Quicksand&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Quicksand&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <title>BuddyPet</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <!------------------------------ Section: Navigation ------------------------------>
     <nav class="navbar navbar-expand-lg shadow sticky-top">
-      <div class="container">
-        <div class="logo-container navbar-brand">
-          <h3 class="logo">Buddy pet</h3>
-        </div>
-        <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home
+        <div class="container">
+            <div class="logo-container navbar-brand">
+                <h3 class="logo">Buddy pet</h3>
+            </div>
+            <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto pt-4">
+                    <li class="nav-item active">
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-paw fa-stack-2x icon-nav" style="font-size:35px;"></i>
+                            <span class="fa fa-stack-1x">
+                                <span style="font-size:20px; margin-top:-20px; display:block;">
+                                    <a class="nav-link fa fa-stack-1x nav-weight" href="#">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </span>
+                            </span>
+                        </span>
+                        <!-- <span class="span fa-stack fa-3x">
+                        <i class="fas fa-paw fa-stack-2x"></i>
+              <a class="nav-link fa fa-stack-1x" href="#"
+              >Home
+              
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./quizz/first-q.html">Quiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shelters</a>
-            </li>
-          </ul>
-          <div id="login-btn" class="">
-            <a class="nav-link">Log In</a>
-          </div>
+            </span> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quizz/first-q.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shelters</a>
+                    </li>
+                </ul>
+                <div id="login-btn" class="">
+                    <a class="nav-link">Log In</a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
     <!------------------------Login-popup------------------------------------>
     <div id="back-drop" class="hidden"></div>
     <div id="pop-up" class="hidden ">
-      <div id="close" class="close mt-n2 ">
-        ×
-      </div>
+        <div id="close" class="close mt-n2 ">
+            ×
+        </div>
 
-      <form action="" class="login">
-        <div class="form-group">
-          <label for="txtname">User Name</label>
-          <input class="form-control input-border" type="text" name="txtname" />
+        <form action="" class="login">
+            <div class="form-group">
+                <label for="txtname">User Name</label>
+                <input class="form-control input-border" type="text" name="txtname" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input class="form-control input-border" type="text" name="txtemail" id="email" />
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" /> Remember me</label>
+            </div>
+        </form>
+        <div class="btn-wrapper">
+            <button type="submit" class="btn" id="login">Login</button>
+            <h5 class="text-center m-2">Or</h5>
+            <button id="google-in">
+                <h4>Sign In with Google</h4>
+                <img src="./image/google-sign-in.png" alt="" />
+            </button>
+            <a class="text-center mt-4 " href="">Are you new here?</a>
         </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input
-            class="form-control input-border"
-            type="text"
-            name="txtemail"
-            id="email"
-          />
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" /> Remember me</label>
-        </div>
-      </form>
-      <div class="btn-wrapper">
-        <button type="submit" class="btn" id="login">Login</button>
-        <h5 class="text-center m-2">Or</h5>
-        <button id="google-in">
-          <h4>Sign In with Google</h4>
-          <img src="./image/google-sign-in.png" alt="" />
-        </button>
-        <a class="text-center mt-4 " href="">Are you new here?</a>
-      </div>
     </div>
 
     <!------------------------------ Section: Header ------------------------------>
@@ -125,162 +117,158 @@
 </header> -->
 
     <header class="masthead">
-      <div class="masthead-opacity">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="card-body card-text col-md-6">
-              <p class="card-title text-left">Find your buddy</p>
-              <p class="card-text">
-                We will guide you through this fantastic<br> experience of finding
-                your match!
-              </p>
-              <div class="text-left">
-                <button type="button" class="btn btn-primary read-more-btn">
-                  Read more
-                </button>
-              </div>
+        <div class="masthead-opacity">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="card-body card-text col-md-6">
+                        <p class="card-title text-left">Find your buddy</p>
+                        <p class="card-text">
+                            We will guide you through this fantastic<br> experience of finding
+                            your match!
+                        </p>
+                        <div class="text-left">
+                            <button type="button" class="btn btn-primary read-more-btn">
+                                Read more
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </header>
 
     <!------------------------------ Section: Services ------------------------------>
 
     <div class="container text-center container-features">
-      <div>
-        <i class="fas fa-minus title-dash"></i>
-        <i class="subtitle">what we offer</i>
-        <i class="fas fa-minus title-dash"></i>
-        <h1 class="h1-responsive font-weight-bold title">How it works</h1>
-        <i class="fas fa-paw title-paw"></i>
-      </div>
+        <div>
+            <i class="fas fa-minus title-dash"></i>
+            <i class="subtitle">what we offer</i>
+            <i class="fas fa-minus title-dash"></i>
+            <h1 class="h1-responsive font-weight-bold title">How it works</h1>
+            <i class="fas fa-paw title-paw"></i>
+        </div>
 
-      <div class="card-columns">
-        <a href="">
-          <div class="card card-features">
-            <div class="card-body show-on-scroll">
-              <div class="inline-photo show-on-scroll mt-2">
-                <i class="fas fa-question feature-icon mt-3"></i>
-                <p class="card-feature-title">1. Take the quiz</p>
-                <p class="card-feature-text text-justify p-3">
-                  This is a tool for adopters to identify pets that will be a
-                  truly great fit for their personality, lifestyle and
-                  household.
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card card-features">
-            <div class="card-body show-on-scroll">
-              <div class="inline-photo show-on-scroll mt-2">
-                <i class="fas fa-home feature-icon mt-3"></i>
-                <p class="card-feature-title">2. Find the Shelter</p>
-                <p class="card-feature-text text-justify p-3">
-                  We provide a platform for diffrent shelters to register their
-                  available pets to be adopted. People can reach them easly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card card-features">
-            <div class="card-body show-on-scroll ">
-              <div class="inline-photo show-on-scroll mt-2">
-                <i class="far fa-calendar-alt feature-icon mt-3"></i>
-                <p class="card-feature-title">3. Schedule a visit</p>
-                <p class="card-feature-text text-justify p-3">
-                  If you feel like visiting a shelter and choosing your pet in
-                  person, this is something for you. Your welcome to do so.
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
+        <div class="card-columns">
+            <a href="">
+                <div class="card card-features">
+                    <div class="card-body show-on-scroll">
+                        <div class="inline-photo show-on-scroll mt-2">
+                            <i class="fas fa-question feature-icon mt-3"></i>
+                            <p class="card-feature-title">1. Take the quiz</p>
+                            <p class="card-feature-text text-justify p-3">
+                                This is a tool for adopters to identify pets that will be a
+                                truly great fit for their personality, lifestyle and
+                                household.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="card card-features">
+                    <div class="card-body show-on-scroll">
+                        <div class="inline-photo show-on-scroll mt-2">
+                            <i class="fas fa-home feature-icon mt-3"></i>
+                            <p class="card-feature-title">2. Find the Shelter</p>
+                            <p class="card-feature-text text-justify p-3">
+                                We provide a platform for diffrent shelters to register their
+                                available pets to be adopted. People can reach them easly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="card card-features">
+                    <div class="card-body show-on-scroll ">
+                        <div class="inline-photo show-on-scroll mt-2">
+                            <i class="far fa-calendar-alt feature-icon mt-3"></i>
+                            <p class="card-feature-title">3. Schedule a visit</p>
+                            <p class="card-feature-text text-justify p-3">
+                                If you feel like visiting a shelter and choosing your pet in
+                                person, this is something for you. Your welcome to do so.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
     <!------------------------------ Section: Banner Take Quiz ------------------------------>
     <div class="banner-quiz">
-      <div class="home-quiz-opacity">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-md-4 text-center">
-              <h2 class="banner-quiz-title">Take the quiz now!</h2>
-              <div class="text-center">
-                <button type="button" class="btn btn-quiz-home text-center">
-                  Take me there <i class="fas fa-arrow-right"></i>
-                </button>
-              </div>
+        <div class="home-quiz-opacity">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-4 text-center">
+                        <h2 class="banner-quiz-title">Take the quiz now!</h2>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-quiz-home text-center">
+                                Take me there <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!------------------------------ Section: Testimonials ------------------------------>
     <div class="testimonials my-5">
-      <section class="container team-section text-center">
-        <!-- Title -->
-        <div>
-          <i class="fas fa-minus title-dash"></i>
-          <i class="subtitle">what our clients say</i>
-          <i class="fas fa-minus title-dash"></i>
-          <h1 class="h1-responsive font-weight-bold title">TESTIMONIALS</h1>
-          <i class="fas fa-paw title-paw"></i>
-        </div>
-        <!--Grid row-->
-        <div class="row h-100 align-items-center text-center">
-          <i class="fas fa-arrow-left col-md-1 carousel-arrow"></i>
-          <!--Grid column-->
-          <div class="col-md-5 mb-md-0 mb-5">
-            <div class="testimonial">
-              <!--Avatar-->
-              <div class="avatar mx-auto">
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                  class="rounded-circle z-depth-1 img-fluid"
-                />
-              </div>
-              <!--Content-->
-              <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-              <p class="">
-                <i class="fas fa-quote-left pr-2 col-1"></i>Lorem ipsum dolor
-                sit amet, consectetur adipisicing elit. Quod eos id officiis hic
-                tenetur quae quaerat ad velit ab hic tenetur.
-              </p>
+        <section class="container team-section text-center">
+            <!-- Title -->
+            <div>
+                <i class="fas fa-minus title-dash"></i>
+                <i class="subtitle">what our clients say</i>
+                <i class="fas fa-minus title-dash"></i>
+                <h1 class="h1-responsive font-weight-bold title">TESTIMONIALS</h1>
+                <i class="fas fa-paw title-paw"></i>
             </div>
-          </div>
-          <!--Grid column-->
-          <div class="col-md-5 mb-md-0 mb-5">
-            <div class="testimonial">
-              <!--Avatar-->
-              <div class="avatar mx-auto">
-                <img
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                  class="rounded-circle z-depth-1 img-fluid"
-                />
-              </div>
-              <!--Content-->
-              <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-              <p class="font-weight-normal dark-grey-text">
-                <i class="fas fa-quote-left pr-2 col-1"></i>Ut enim ad minima
-                veniam, quis nostrum exercitationem ullam corporis suscipit
-                laboriosam, nisi ut aliquid commodi.
-              </p>
+            <!--Grid row-->
+            <div class="row h-100 align-items-center text-center">
+                <i class="fas fa-arrow-left col-md-1 carousel-arrow"></i>
+                <!--Grid column-->
+                <div class="col-md-5 mb-md-0 mb-5">
+                    <div class="testimonial">
+                        <!--Avatar-->
+                        <div class="avatar mx-auto">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
+                                class="rounded-circle z-depth-1 img-fluid" />
+                        </div>
+                        <!--Content-->
+                        <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
+                        <p class="">
+                            <i class="fas fa-quote-left pr-2 col-1"></i>Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Quod eos id officiis hic
+                            tenetur quae quaerat ad velit ab hic tenetur.
+                        </p>
+                    </div>
+                </div>
+                <!--Grid column-->
+                <div class="col-md-5 mb-md-0 mb-5">
+                    <div class="testimonial">
+                        <!--Avatar-->
+                        <div class="avatar mx-auto">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
+                                class="rounded-circle z-depth-1 img-fluid" />
+                        </div>
+                        <!--Content-->
+                        <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
+                        <p class="font-weight-normal dark-grey-text">
+                            <i class="fas fa-quote-left pr-2 col-1"></i>Ut enim ad minima
+                            veniam, quis nostrum exercitationem ullam corporis suscipit
+                            laboriosam, nisi ut aliquid commodi.
+                        </p>
+                    </div>
+                </div>
+                <i class="fas fa-arrow-right col-md-1 carousel-arrow"></i>
             </div>
-          </div>
-          <i class="fas fa-arrow-right col-md-1 carousel-arrow"></i>
-        </div>
-        <!--Grid row-->
+            <!--Grid row-->
 
-        <i class="fas fa-minus text-center carousel-minus-active"></i>
-        <i class="fas fa-minus text-center carousel-minus"></i>
-        <i class="fas fa-minus text-center carousel-minus"></i>
-      </section>
+            <i class="fas fa-minus text-center carousel-minus-active"></i>
+            <i class="fas fa-minus text-center carousel-minus"></i>
+            <i class="fas fa-minus text-center carousel-minus"></i>
+        </section>
     </div>
 
     <!------------------------------ Section: Footer ------------------------------>
@@ -324,63 +312,57 @@
 </footer> -->
 
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-1"></div>
-          <div class="col-4 text-left">
-            <h2 class="fotter-title-name mt-3 mb-3">We are Creative Lemons</h2>
-            <p class="fotter-text">
-              We help people and pets find each other and live happier lives
-              together. It's our mission. It's why we exist.
-            </p>
-            <div class="text-left">
-              <i class="fab fa-facebook-square social-media mr-1"></i>
-              <i class="fab fa-instagram social-media mr-1"></i>
-              <i class="fab fa-linkedin social-media"></i>
-            </div>
-          </div>
-          <div class="col-3">
-            <h2 class="fotter-title mt-3 mb-3">Contact us</h2>
-            <p class="fotter-text mb-2">
-              <i class="fas fa-phone mr-2"></i>(45) 45 36 89 54
-            </p>
-            <p class="fotter-text mb-2">
-              <i class="fas fa-envelope mr-2"></i>email@yoursite.com
-            </p>
-            <p class="fotter-text">
-              <i class="fas fa-map-marker-alt mr-2"></i>Pet Street 123 –
-              Copenhagen
-            </p>
-          </div>
-          <div class="col-3">
-            <h2 class="fotter-title mt-3 mb-3">Subscribe to our newsletter</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-4 text-left">
+                    <h2 class="fotter-title-name mt-3 mb-3">We are Creative Lemons</h2>
+                    <p class="fotter-text">
+                        We help people and pets find each other and live happier lives
+                        together. It's our mission. It's why we exist.
+                    </p>
+                    <div class="text-left">
+                        <i class="fab fa-facebook-square social-media mr-1"></i>
+                        <i class="fab fa-instagram social-media mr-1"></i>
+                        <i class="fab fa-linkedin social-media"></i>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h2 class="fotter-title mt-3 mb-3">Contact us</h2>
+                    <p class="fotter-text mb-2">
+                        <i class="fas fa-phone mr-2"></i>(45) 45 36 89 54
+                    </p>
+                    <p class="fotter-text mb-2">
+                        <i class="fas fa-envelope mr-2"></i>email@yoursite.com
+                    </p>
+                    <p class="fotter-text">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Pet Street 123 –
+                        Copenhagen
+                    </p>
+                </div>
+                <div class="col-3">
+                    <h2 class="fotter-title mt-3 mb-3">Subscribe to our newsletter</h2>
 
-            <div class="row form-group ">
-              <div class="input-group mt-2">
-                <input
-                  type="text"
-                  class="form-control"
-                  value="Enter your email"
-                />
-                <span class="input-group-btn"
-                  ><button type="button" class="btn btn-success btn-subscribe">
-                    Subscribe
-                  </button></span
-                >
-              </div>
+                    <div class="row form-group ">
+                        <div class="input-group mt-2">
+                            <input type="text" class="form-control" value="Enter your email" />
+                            <span class="input-group-btn"><button type="button" class="btn btn-success btn-subscribe">
+                                    Subscribe
+                                </button></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <hr />
         </div>
-        <hr />
-      </div>
 
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-12 text-center">
-            <p class="copyright">&copy; Copyright 2019 Creative Lemons</p>
-          </div>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 text-center">
+                    <p class="copyright">&copy; Copyright 2019 Creative Lemons</p>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 
     <!-- <footer>
@@ -406,57 +388,54 @@
     </div>
 </footer> -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
 
     <script>
-      // Detect request animation frame
-      var scroll =
-        window.requestAnimationFrame ||
-        // IE Fallback
-        function(callback) {
-          window.setTimeout(callback, 1000);
-        };
-      var elementsToShow = document.querySelectorAll(".show-on-scroll");
-      function loop() {
-        Array.prototype.forEach.call(elementsToShow, function(element) {
-          if (isElementInViewport(element)) {
-            element.classList.add("is-visible");
-          } else {
-            element.classList.remove("is-visible");
-          }
-        });
-        scroll(loop);
-      }
-      // Call the loop for the first time
-      loop();
-      // Helper function from: http://stackoverflow.com/a/7557433/274826
-      function isElementInViewport(el) {
-        // special bonus for those using jQuery
-        if (typeof jQuery === "function" && el instanceof jQuery) {
-          el = el[0];
+        // Detect request animation frame
+        var scroll =
+            window.requestAnimationFrame ||
+            // IE Fallback
+            function (callback) {
+                window.setTimeout(callback, 1000);
+            };
+        var elementsToShow = document.querySelectorAll(".show-on-scroll");
+        function loop() {
+            Array.prototype.forEach.call(elementsToShow, function (element) {
+                if (isElementInViewport(element)) {
+                    element.classList.add("is-visible");
+                } else {
+                    element.classList.remove("is-visible");
+                }
+            });
+            scroll(loop);
         }
-        var rect = el.getBoundingClientRect();
-        return (
-          (rect.top <= 0 && rect.bottom >= 0) ||
-          (rect.bottom >=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.top <=
-              (window.innerHeight || document.documentElement.clientHeight)) ||
-          (rect.top >= 0 &&
-            rect.bottom <=
-              (window.innerHeight || document.documentElement.clientHeight))
-        );
-      }
+        // Call the loop for the first time
+        loop();
+        // Helper function from: http://stackoverflow.com/a/7557433/274826
+        function isElementInViewport(el) {
+            // special bonus for those using jQuery
+            if (typeof jQuery === "function" && el instanceof jQuery) {
+                el = el[0];
+            }
+            var rect = el.getBoundingClientRect();
+            return (
+                (rect.top <= 0 && rect.bottom >= 0) ||
+                (rect.bottom >=
+                    (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.top <=
+                    (window.innerHeight || document.documentElement.clientHeight)) ||
+                (rect.top >= 0 &&
+                    rect.bottom <=
+                    (window.innerHeight || document.documentElement.clientHeight))
+            );
+        }
     </script>
     <script src="login.js"></script>
-  </body>
+</body>
+
 </html>
