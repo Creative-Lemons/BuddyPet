@@ -1,0 +1,169 @@
+#firstquot {
+  width: 32em;
+}
+#secondq {
+  width: 20em;
+}
+.main-container {
+  transition: all 0.5s;
+  width: 100%;
+  margin: 1em auto 1em;
+}
+.main-container-for-questions {
+  transition: all 0.5s;
+  width: 100%;
+  margin: 5em auto;
+}
+.quiz-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.host-quotes {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 7px;
+  text-align: center;
+}
+.answ1 {
+  border: 2px solid #208380;
+  border-radius: 20px;
+  padding: 1em;
+}
+.answ1:hover {
+  background-color: lightgray;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+.answ1:hover a {
+  color: #208380;
+}
+.answ1 a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+  font-size: 1.2em;
+}
+
+#host {
+  width: 5em;
+}
+.bar-container {
+  position: relative;
+}
+.animation-bar1 {
+  animation: progressBar 1s ease-in-out;
+  -webkit-animation: progressBar 1s ease-in-out;
+  -moz-animation: progressBar 1s ease-in-out;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@-moz-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25%;
+  }
+}
+.animation-bar2 {
+  animation: progressBar2 1s ease-in-out;
+  -webkit-animation: progressBar2 1s ease-in-out;
+
+  -moz-animation: progressBar2 1s ease-in-out;
+}
+@keyframes progressBar2 {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@-webkit-keyframes progressBar2 {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@-moz-keyframes progressBar2 {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.animation-bar3 {
+  animation: progressBar3 1s ease-in-out forwards;
+  -webkit-animation: progressBar3 1s ease-in-out forwards;
+
+  -moz-animation: progressBar3 1s ease-in-out forwards;
+}
+@keyframes progressBar3 {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@-webkit-keyframes progressBar3 {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.animation-bar4 {
+  animation: progressBar4 1s ease-in-out forwards;
+  -webkit-animation: progressBar4 1s ease-in-out forwards;
+
+  -moz-animation: progressBar4 1s ease-in-out forwards;
+}
+@keyframes progressBar4 {
+  0% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes progressBar4 {
+  0% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#fourth {
+  width: 20em;
+}
+.p-container {
+  text-align: justify;
+}
+#result {
+  width: 25em;
+}

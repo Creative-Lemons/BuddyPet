@@ -56,7 +56,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="quiz.html">Quiz</a>
+              <a class="nav-link" href="../quiz/first-q.html">Quiz</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pet</a>
@@ -71,24 +71,40 @@
         </div>
       </div>
     </nav>
-    <div class="main-container">
+    <div class="main-container-for-questions">
       <div class="quiz-container">
         <img id="host" src="../image/host.png" alt="host" />
         <div class="host-quotes">
           <img id="firstquot" src="../image/firstq.png" alt="firstq" />
           <div class="answ1"><a href="./second-q.html">Yes</a></div>
           <div class="answ1"><a href="./second-q.html">No</a></div>
+          <div class=" container bar-container mt-3 ">
+            <!-- Orange progress bar -->
+            <div class="progress">
+              <div
+                class="progress-bar bg-warning progress-bar-striped  animation-bar1"
+                style="width:25%"
+              >
+                25%
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container bar-container">
-        <!-- Orange -->
-        <div class="progress">
-          <div
-            class="progress-bar bg-warning progress-bar-striped progress-bar-animated animation-bar1"
-            style="width:25%"
-          >
-            25%
-          </div>
+
+      <div class="arrow-bar-wrapper d-flex  mt-4 row">
+        <div
+          class="col  container d-flex align-items-center justify-content-center "
+        >
+          <i class="fas fa-arrow-left pl-1 "></i>
+          <p class="m-0 pl-1">Previous</p>
+        </div>
+        <div class="spacer col"></div>
+        <div
+          class="col arrow container d-flex align-items-center justify-content-center  "
+        >
+          <div class="m-0"><a href="./second-q.html">Next</a></div>
+          <i class="fas fa-arrow-right pl-1 "></i>
         </div>
       </div>
     </div>

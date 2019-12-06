@@ -71,24 +71,38 @@
       </div>
     </nav>
 
-    <div class="main-container">
+    <div class="main-container-for-questions">
       <div class="quiz-container">
         <img id="host" src="../image/host.png" alt="host" />
         <div class="host-quotes">
-          <img id="secondq" src="../image/third-q.png" alt="secondq" />
+          <img id="fourth" src="../image/fourth.png" alt="secondq" />
           <div class="answ1"><a href="quiz-result.html">Agree</a></div>
           <div class="answ1"><a href="quiz-result.html">Disagree</a></div>
         </div>
       </div>
-      <div class="container bar-container">
-        <!-- Orange -->
-        <div class="progress">
-          <div
-            class="progress-bar bg-warning progress-bar-striped progress-bar-animated .animation-bar4"
-            style="width:100%"
-          >
-            100%
+      <div class="arrow-bar-wrapper d-flex  mt-4 row">
+        <div
+          class="col  container d-flex align-items-center justify-content-center "
+        >
+          <i class="fas fa-arrow-left pl-1 "></i>
+          <div class="m-0"><a href="./third-q.html">Previous</a></div>
+        </div>
+        <div class=" col container bar-container mt-3">
+          <!-- Orange -->
+          <div class="progress">
+            <div
+              class="progress-bar bg-warning progress-bar-striped animation-bar4"
+              style="width:50%"
+            >
+              100%
+            </div>
           </div>
+        </div>
+        <div
+          class="col arrow container d-flex align-items-center justify-content-center  "
+        >
+          <div class="m-0"><a href="./quiz-result.html">Next</a></div>
+          <i class="fas fa-arrow-right pl-1 "></i>
         </div>
       </div>
     </div>
