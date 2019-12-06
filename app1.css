@@ -85,6 +85,14 @@
 .navbar a:hover{
   font-size: 1.02em;
 }
+
+.icon-nav{
+  color: rgb(33, 131, 128, 0.7);
+}
+
+.nav-weight{
+  font-weight: bold;
+}
    /*-----------------------------------User profile-----------------------------------*/
    .border-user-info {
     border-radius: 24px;
@@ -304,7 +312,7 @@ footer{
       }
       .hover-mask img {
         width: 100%;
-        height: auto;
+        height: 13em;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
@@ -413,3 +421,94 @@ footer{
       .signup-form{
         border-radius: 0px 20px 20px 0px;
       }
+
+      /* ---------------- Login Modal-------------- */
+#pop-up {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 4em auto;
+  width: 30em;
+  height: 27em;
+  border: 2px #218380 solid;
+  border-radius: 20px;
+  padding: 1em;
+  transform: scale(0.7);
+  opacity: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+#back-drop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+
+  z-index: 100;
+}
+.overflow {
+  overflow: hidden;
+}
+#google-in,
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11em;
+  height: 2.3em;
+  border-radius: 25px;
+  border: solid 1px #218380;
+}
+#google-in img {
+  width: 25px;
+  padding-left: 0.6em;
+}
+#google-in h4 {
+  font-size: 11px;
+  margin: 0;
+}
+#login {
+  background-color: #218380;
+  color: #fff;
+}
+.btn-wrapper {
+  margin: 1em auto;
+  display: grid;
+  justify-content: center;
+}
+.fade-in-animation {
+  animation: fade-in 0.3s ease-out forwards;
+}
+@keyframes fade-in {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.fade-out-animation {
+  transform: scale(0.2);
+  opacity: 0;
+  transition: transform 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+#close {
+  cursor: pointer;
+}
+#login-btn {
+  border: #fff 1px solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 2em;
+  margin-left: 1em;
+}
+#login-btn:hover {
+  color: rgb(249, 190, 79);
+  background-color: #fff;
+  cursor: pointer;
+}
+

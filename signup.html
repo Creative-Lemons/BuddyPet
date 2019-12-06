@@ -17,39 +17,69 @@
 <body>
     <!------------------------------ Section: Navigation ------------------------------>
     <nav class="navbar navbar-expand-lg shadow sticky-top">
-        <div class="container">
-            <div class="logo-container navbar-brand">
-                <h3 class="logo">Buddy pet</h3>
+            <div class="container">
+                <div class="logo-container navbar-brand">
+                    <h3 class="logo">Buddy pet</h3>
+                </div>
+                <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home
+                                    </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quizz/first-q.html">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="pet.html">Pet
+                                    </a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="pet.html">Shelters
+                                    </a>
+                        </li>
+                    </ul>
+                    <div id="login-btn" class="">
+                        <a class="nav-link">Log In</a>
+                    </div>
+                </div>
             </div>
-            <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Quiz</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shelters</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sign up</a>
-                    </li>
-                </ul>
-            </div>
+        </nav>
+        <!------------------------Login-popup------------------------------------>
+    <div id="back-drop" class="hidden"></div>
+    <div id="pop-up" class="hidden ">
+        <div id="close" class="close mt-n2 ">
+            ×
         </div>
-    </nav>
 
+        <form action="" class="login">
+            <div class="form-group">
+                <label for="txtname">User Name</label>
+                <input class="form-control input-border" type="text" name="txtname" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input class="form-control input-border" type="text" name="txtemail" id="email" />
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" /> Remember me</label>
+            </div>
+        </form>
+        <div class="btn-wrapper">
+             <button type="submit" class="btn" id="login"><a href="user-profile.html">Login</a></button>
+            <h5 class="text-center m-2">Or</h5>
+            <button id="google-in">
+                <h4>Sign In with Google</h4>
+                <img src="./image/google-sign-in.png" alt="" />
+            </button>
+            <a class="text-center mt-4 " href="signup.html">Are you new here?</a>
+        </div>
+    </div>
     <main>
         <div class="container text-center container-features mt-5">
             <div>
@@ -201,5 +231,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
+    <script src="login.js"></script>
 </html>
