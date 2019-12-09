@@ -136,6 +136,15 @@
   100% {
     width: 75%;
   }
+
+}
+@-moz-keyframes progressBar3 {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 75%;
+  }
 }
 .animation-bar4 {
   animation: progressBar4 1s ease-in-out forwards;

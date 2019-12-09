@@ -30,92 +30,134 @@
   <body>
     <!------------------------------ Section: Navigation ------------------------------>
     <nav class="navbar navbar-expand-lg shadow sticky-top">
-      <div class="container">
-        <div class="logo-container navbar-brand">
-          <h3 class="logo">Buddy pet</h3>
-        </div>
-        <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="../index.html"
-                >Home
+        <div class="container">
+            <div class="logo-container navbar-brand">
+                <a href="../index.html" class="text-decoration-none"> <h3 class="logo">Buddy pet</h3></a> 
+            </div>
+            <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto pt-4">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <!-- <span class="span fa-stack fa-3x">
+                        <i class="fas fa-paw fa-stack-2x"></i>
+              <a class="nav-link fa fa-stack-1x" href="#"
+              >Home
+              
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="first-q.html">Quiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pet.html">Pet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../shelters.html">Shelters</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign up</a>
-            </li>
-          </ul>
+            </span> -->
+                    </li>
+                    <li class="nav-item">
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-paw fa-stack-2x icon-nav" style="font-size:35px;"></i>
+                            <span class="fa fa-stack-1x">
+                                <span style="font-size:20px; margin-top:-20px; display:block;">
+                                    <a class="nav-link fa fa-stack-1x nav-weight" href="first-q.html">Quiz
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pet.html">Pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../shelters.html">Shelters</a>
+                    </li>
+                </ul>
+                <div id="login-btn" class="">
+                    <a class="nav-link">Log In</a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
+    <!------------------------Login-popup------------------------------------>
+    <div id="back-drop" class="hidden"></div>
+    <div id="pop-up" class="hidden ">
+        <div id="close" class="close mt-n2 ">
+            ×
+        </div>
+
+        <form action="" class="login">
+            <div class="form-group">
+                <label for="txtname">User Name</label>
+                <input class="form-control input-border" type="text" name="txtname" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input class="form-control input-border" type="text" name="txtemail" id="email" />
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" /> Remember me</label>
+            </div>
+        </form>
+        <div class="btn-wrapper">
+             <button type="submit" class="btn" id="login"><a href="../user-profile.html">Login</a></button>
+            <h5 class="text-center m-2">Or</h5>
+            <button id="google-in">
+                <h4>Sign In with Google</h4>
+                <img src="./image/google-sign-in.png" alt="" />
+            </button>
+            <a class="text-center mt-4 " href="../signup.html">Are you new here?</a>
+        </div>
+    </div>
+
 
     <div class="main-container-for-questions">
-      <div class="quiz-container">
-        <img id="host" src="../image/host.png" alt="host" />
-        <div class="host-quotes">
-          <img id="fourth" src="../image/fourth.png" alt="secondq" />
-          <a
-            class="text-decoration-none text-dark font-weight-bold"
-            href="quiz-result.html"
-            ><div class="answ1">Agree</div></a
-          >
-          <a
-            class="text-decoration-none text-dark font-weight-bold"
-            href="quiz-result.html"
-            ><div class="answ1">
-              Disagree
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="arrow-bar-wrapper d-flex  mt-4 row">
-        <div
-          class="col  container d-flex align-items-center justify-content-center "
-        >
-          <i class="fas fa-arrow-left  "></i>
-          <div class="m-0 pl-1"><a href="./third-q.html">Previous</a></div>
-        </div>
-        <div class=" col container bar-container mt-3">
-          <!-- Orange -->
-          <div class="progress">
-            <div
-              class="progress-bar bg-warning progress-bar-striped animation-bar4"
-              style="width:50%"
+        <div class="quiz-container">
+          <img id="host" src="../image/host.png" alt="host" />
+          <div class="host-quotes">
+            <img id="firstquot" src="../image/question2.png" alt="firstq" />
+            <a
+              class="text-decoration-none text-dark font-weight-bold"
+              href="quiz-result.html"
             >
-              100%
+              <div class="answ1">Agree</div></a
+            >
+            <a
+              class="text-decoration-none text-dark font-weight-bold"
+              href="quiz-result.html"
+            >
+              <div class="answ1">Disagree</div></a
+            >
+            <div class=" container bar-container mt-5 ">
+              <!-- Orange progress bar -->
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning progress-bar-striped animation-bar4"
+                  style="width:100%"
+                >
+                100%
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="col arrow container d-flex align-items-center justify-content-center  "
-        >
-          <div class="m-0"><a href="./quiz-result.html">Next</a></div>
-          <i class="fas fa-arrow-right pl-1 "></i>
+  
+        <div class="container arrow-bar-wrapper  mt-4">
+          <div class="row">
+          <div
+            class="col d-flex align-items-center justify-content-center"
+          >
+            <i class="fas fa-arrow-left  "></i>
+            <div class="m-0 pl-1"><a class="text-decoration-none" href="third-q.html">Previous</a></div>
+          </div>
+          <div class="spacer col"></div>
+          <div
+            class="col arrow  d-flex align-items-center justify-content-center"
+          >
+            <div class="m-0"><a class="text-decoration-none" href="quiz-result.html">Results</a></div>
+            <i class="fas fa-arrow-right pl-1 "></i>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
 
     <footer>
       <div class="container">
@@ -176,5 +218,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../login.js"></script>
   </body>
 </html>

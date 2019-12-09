@@ -31,46 +31,85 @@
   <body>
     <!------------------------------ Section: Navigation ------------------------------>
     <nav class="navbar navbar-expand-lg shadow sticky-top">
-      <div class="container">
-        <div class="logo-container navbar-brand">
-          <h3 class="logo">Buddy pet</h3>
-        </div>
-        <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home
+        <div class="container">
+            <div class="logo-container navbar-brand">
+                <a href="../index.html" class="text-decoration-none"> <h3 class="logo">Buddy pet</h3></a> 
+            </div>
+            <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto pt-4">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <!-- <span class="span fa-stack fa-3x">
+                        <i class="fas fa-paw fa-stack-2x"></i>
+              <a class="nav-link fa fa-stack-1x" href="#"
+              >Home
+              
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./first-q.html">Quiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pet.html">Pet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../shelters.html">Shelters</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign up</a>
-            </li>
-          </ul>
+            </span> -->
+                    </li>
+                    <li class="nav-item">
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-paw fa-stack-2x icon-nav" style="font-size:35px;"></i>
+                            <span class="fa fa-stack-1x">
+                                <span style="font-size:20px; margin-top:-20px; display:block;">
+                                    <a class="nav-link fa fa-stack-1x nav-weight" href="first-q.html">Quiz
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </span>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pet.html">Pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../shelters.html">Shelters</a>
+                    </li>
+                </ul>
+                <div id="login-btn" class="">
+                    <a class="nav-link">Log In</a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
+    <!------------------------Login-popup------------------------------------>
+    <div id="back-drop" class="hidden"></div>
+    <div id="pop-up" class="hidden ">
+        <div id="close" class="close mt-n2 ">
+            ×
+        </div>
+
+        <form action="" class="login">
+            <div class="form-group">
+                <label for="txtname">User Name</label>
+                <input class="form-control input-border" type="text" name="txtname" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input class="form-control input-border" type="text" name="txtemail" id="email" />
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" /> Remember me</label>
+            </div>
+        </form>
+        <div class="btn-wrapper">
+             <button type="submit" class="btn" id="login"><a href="../user-profile.html">Login</a></button>
+            <h5 class="text-center m-2">Or</h5>
+            <button id="google-in">
+                <h4>Sign In with Google</h4>
+                <img src="./image/google-sign-in.png" alt="" />
+            </button>
+            <a class="text-center mt-4 " href="../signup.html">Are you new here?</a>
+        </div>
+    </div>
+
+
     <div class="container text-center container-features mt-5 mb-3">
       <div>
         <i class="fas fa-minus title-dash"></i>
@@ -87,7 +126,7 @@
           <img id="result" src="../image/result.png" alt="secondq" />
         </div>
       </div>
-      <div class=" container  d-flex justify-content-center ">
+      <div class=" container  d-flex justify-content-center mt-2 mb-3">
         <p class="col-6 m-4">
           An Active Personality is one who has a clear idea of how they want the
           world to be and does not easily tolerate deviations from this ideal.
@@ -101,7 +140,7 @@
             <div class="bg-white rounded shadow-sm">
               <!--<img src="image/duck1.jpg" alt="" class="img-fluid card-img-top">-->
               <div class="hover-mask">
-                <a href="#" title="">
+                <a href="../single-pet.html" title="">
                   <img
                     class="img-fluid card-img-top"
                     src="../image/duck1.jpg"
@@ -117,7 +156,7 @@
                 </a>
               </div>
               <div class="p-4 text-center">
-                <h5><a href="#" class="text-dark">Duksse</a></h5>
+                <h5><a href="../single-pet.html" class="text-dark">Duksse</a></h5>
               </div>
             </div>
           </div>
@@ -126,7 +165,7 @@
             <div class="bg-white rounded shadow-sm">
               <!--<img src="image/duck1.jpg" alt="" class="img-fluid card-img-top">-->
               <div class="hover-mask">
-                <a href="#" title="">
+                <a href="../single-pet.html" title="">
                   <img
                     class="img-fluid card-img-top"
                     src="../image/dog8.jpg"
@@ -142,7 +181,7 @@
                 </a>
               </div>
               <div class="p-4  text-center">
-                <h5><a href="#" class="text-dark">Chef</a></h5>
+                <h5><a href="../single-pet.html" class="text-dark">Chef</a></h5>
               </div>
             </div>
           </div>
@@ -150,7 +189,7 @@
             <div class="bg-white rounded shadow-sm">
               <!--<img src="image/duck1.jpg" alt="" class="img-fluid card-img-top">-->
               <div class="hover-mask">
-                <a href="#" title="">
+                <a href="../single-pet.html" title="">
                   <img
                     class="img-fluid card-img-top"
                     src="../image/dog6.jpg"
@@ -166,7 +205,7 @@
                 </a>
               </div>
               <div class="p-4  text-center">
-                <h5><a href="#" class="text-dark">Happy</a></h5>
+                <h5><a href="../single-pet.html" class="text-dark">Happy</a></h5>
               </div>
             </div>
           </div>
@@ -232,5 +271,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../login.js"></script>
   </body>
 </html>
