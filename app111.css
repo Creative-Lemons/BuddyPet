@@ -30,22 +30,11 @@ p {
 
 /* user profile */
 
-.parallax {
-  /* The image used */
-  /* background-image: url("image/dog-home.jpg"); */
-  /* Set a specific height */
-  height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .border-user-info {
   border-radius: 24px;
-  border: 12px solid #218380;
+  border: 1px;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 .img-radius {
@@ -55,6 +44,16 @@ p {
 .user-info {
   font-size: 1.4em;
   color: #675444;
+}
+
+.user-more-btn{
+  background-color: #218380;
+  border:none;
+  font-weight: 550; 
+}
+
+.user-more-btn:hover{
+  background-color: #76b594;
 }
 
 .border {
