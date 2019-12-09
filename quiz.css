@@ -35,6 +35,7 @@
   background-color: lightgray;
   border: 2px solid #ffffff;
   cursor: pointer;
+  color: #208380;
 }
 .answ1:hover a {
   color: #208380;
