@@ -409,12 +409,13 @@ hr {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #F9BE4F;
   height: 2em;
   margin-left: 1em;
+  background-color: #fff;
 }
 #login-btn:hover {
-  color: rgb(249, 190, 79);
-  background-color: #fff;
+  color: #fff;
+  background-color: transparent;
   cursor: pointer;
 }
