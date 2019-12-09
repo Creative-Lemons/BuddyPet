@@ -2,6 +2,10 @@ body {
   font-family: "Questrial", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /*-----------------------------------Title-----------------------------------*/
 
 .title {
@@ -361,7 +365,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 11em;
+  /* width: 11em; */
   height: 2.3em;
   border-radius: 25px;
   border: solid 1px #218380;
