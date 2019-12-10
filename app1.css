@@ -91,6 +91,46 @@ p {
   font-weight: bold;
 }
 
+/*-----------------------------------Banner-Quiz-----------------------------------*/
+
+.banner-quiz {
+  margin-top: 2%;
+  /* The image used */
+  background-image: url("image/paws.jpg");
+
+  /* Set a specific height */
+  height: 30vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-quiz-opacity {
+  height: 30vh;
+  background-color: rgb(107, 95, 95, 0.3);
+}
+
+.banner-quiz-title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: white;
+}
+
+.btn-quiz-home {
+  color: white;
+  background-color: #f9be4f;
+  border: none;
+}
+
+.btn-quiz-home:hover {
+  color: white;
+  background-color: #76b594;
+  border: none;
+}
+
 /*-----------------------------------User profile-----------------------------------*/
 .border-user-info {
   border-radius: 24px;
@@ -148,6 +188,9 @@ p {
 .read-more-btn:hover {
   background-color: #76b594;
 }
+
+
+
 /*-----------------------------------Footer-----------------------------------*/
 
 footer {
@@ -199,11 +242,11 @@ footer {
 }
 
 hr {
-  background-color: #7a7a7a;
+  background-color: #f6f6f6;
   height: 0.001vh;
 }
 
-/* pet profile */
+/* ----------------------------------------------------------pet profile----------------------------------- */
 
 /* #pet-profile {
       width: 15em;
@@ -215,16 +258,23 @@ hr {
       background-position: center;
       background-size: cover;
     }
-
     .container-pet-popup{
       margin: 4em auto;
       max-width: 80%;
     }
-
     .vl {
       border-left: 3px solid green;
       height: 50%;
     } */
+
+  .fa-comment-dots {
+    color: #f9be4f;
+    font-size: 2.5em;
+    }
+
+    .title-single-animal {
+      font-size: 2.3em;
+    }
 
 .title-text-pet {
   font-size: 2.5em;
@@ -236,22 +286,32 @@ hr {
   font-size: 0.8em;
 }
 
-.pet-info {
-  font-size: 1.3em;
-  color: black;
+.pet-info-title {
+  font-size: 1em;
+  color: #3b3b3b;  
+  line-height: 0.6;
+}
+
+.pet-info-text {
+  font-size: 1em;
+  color: #808080;  
+  line-height: 0.6;
 }
 
 .available-text {
   color: black;
   font-size: 1em;
+
+  
 }
 
 .img-pet-radius {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .font-awsome {
-  color: green;
+  color: #76b594;
+
 }
 
 .paw {
@@ -700,4 +760,61 @@ hr {
 }
 #close-adopt {
   cursor: pointer;
+}
+
+
+/*-----------------------------------Banner-Schedule-Visit-----------------------------------*/
+
+.banner-pet {
+  
+  /* The image used */
+  background-image: url("image/schedule-visit.jpg");
+
+  /* Set a specific height */
+  height: 30vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-quiz-opacity {
+  height: 30vh;
+  background-color: rgb(107, 95, 95, 0.4);
+}
+
+.banner-visit-title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+}
+
+.btn-quiz-home {
+  color: white;
+  background-color: #f9be4f;
+  border: none;
+}
+
+.btn-quiz-home:hover {
+  color: white;
+  background-color: #76b594;
+  border: none;
+}
+
+
+.btn-schedule {
+  background-color: #76b594;
+  border: none;
+  border-radius: 0px 0px 0px 0px;
+  cursor: none;
+}
+
+.btn-schedule-check {
+  width: 4vw;
+  background-color: #218380;
+  border: none;
+  border-radius: 0px 0px 0px 0px;
+  font-weight: 550;
 }

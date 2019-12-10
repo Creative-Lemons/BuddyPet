@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="app1.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link href="https://fonts.googleapis.com/css?family=Questrial|Quicksand&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
@@ -134,60 +135,65 @@
                 </div>
 
     <main>
-        <div class="container text-center container-features mt-5">
-            <div>
+            <div class="text-center mt-4 container">
                 <i class="fas fa-minus title-dash"></i>
                 <i class="subtitle">adopt a pet</i>
                 <i class="fas fa-minus title-dash"></i>
                 <h1 class="h1-responsive font-weight-bold title">Brownie</h1>
                 <i class="fas fa-paw title-paw"></i>
             </div>
+        <div class=" container-features ">
 
-            <div class="container p-4 mt-3 mb-2">
+            <div class="p-4 mt-3 mb-2 about-pet-background">
                 <div class="row pr-3">
-                    <div class="col-md-6">
+                    <div class="col-1"></div>
+                    <div class="col-md-5">
                         <div>
                             <img src="image/golden-retriever.jpg" class="img-fluid img-radius img-pet-radius"
                                 alt="Responsive image" />
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h2 class="text-center font-weight-bold ">Pet Info</h2>
-                        <hr />
+                    
+                    <div class="col-md-4 mt-1">
+                            <i class="fas fa-comment-dots"></i>
+                            <p class="title-single-animal">Hello, I'm <b>Brownie!</b></hp>
+                        <hr/>
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <p class="pet-info text-left">Age: 2 year old</p>
-                                    <p class="pet-info text-left">Breed: Labrador</p>
-                                    <p class="pet-info text-left">Gender: Male</p>
+                                <div class="col-md-4">
+                                    <p class="pet-info-title"><b>Age</b></p>
+                                    <p class="pet-info-title"><b>Breed</b></p>
+                                    <p class="pet-info-title"><b>Gender</b></p>
+                                    <p class="pet-info-title"><b>Personality</b></p>
+                                    <p class="pet-info-title"><b>Shelter</b></p>
+                                    <p class="pet-info-title"><b>Availability</b></p>
+                                        
                                 </div>
                                 <div class="col-md-6">
-                                    <p class="pet-info text-left">Personality: Active</p>
-                                    <p class="pet-info text-left">Shelter: Dyreværnet</p>
-                                    <p class="pet-info text-left">
-                                        <i class="far fa-check-circle font-awsome mr-2"></i>Available!!
-                                    </p>
-                                </div>
+                                        <p class="pet-info-text">Two years old</p>
+                                        <p class="pet-info-text">Labrador</p>
+                                        <p class="pet-info-text">Male</p>
+                                        <p class="pet-info-text">Active</p>
+                                        <p class="pet-info-text">Dyreværnet</p>
+                                        <p class="pet-info-text">
+                                            <i class="far fa-check-circle font-awsome mr-2"></i>Available!!
+                                        </p>
+                                    </div>
                             </div>
                         </div>
 
-                        <div class="mt-3">
-                            Date: <input type="text" id="my_date_picker" />
-                            <button type="button" class="btn btn-primary read-more-btn ml-4">
-                                Scedule a visit
-                            </button>
+                        
+                    </div>
+                        <div class="col-12 text-center">
+                            <div id="adopt-me-btn ">
+                                 <button type="button" class="btn btn-primary read-more-btn mt-3">Adopt me</button>
+                            </div>
                         </div>
-                        <div id="adopt-me-btn">
-                        <button type="button" class="btn btn-primary read-more-btn mt-4">
-                            Adopt me
-                        </button>
-                    </div>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <section class="pt-3 pb-5 about-pet-background">
+        <section class="pt-3 pb-5">
             <div class="m-4">
                 <h2 class="font-weight-bold container text-left">About Me</h2>
             </div>
@@ -222,6 +228,31 @@
                 </div>
             </div>
         </section>
+
+        <div class="banner-pet">
+            <div class="home-quiz-opacity">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-5 text-center">
+                            <h2 class="banner-visit-title">Schedule a visit and meet your future buddy!</h2>
+                                    <div class="form-group">
+                                            <div class="input-group">
+                                            
+                                                <!-- <span class="input-group-btn">-->
+                                                    <button class="btn btn-schedule">
+                                                        <i class="far fa-calendar-alt text-white"></i>
+                                                    </button>
+                                                    <input type="text" id="my_date_picker" class="form-control" value="select a date" />
+                                                <!-- </span> -->
+                                                    <button type="button" class="btn btn-primary btn-schedule-check"><i class="fas fa-check"></i></button>                                                                                          
+                                            </div>
+                             </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer>
             <div class="container">

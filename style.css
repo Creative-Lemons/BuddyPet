@@ -425,3 +425,61 @@ hr {
   background-color: transparent;
   cursor: pointer;
 }
+
+
+/*-----------------------------------Banner-Schedule-Visit-----------------------------------*/
+
+.banner-pet {
+  
+  /* The image used */
+  background-image: url("image/schedule-visit.jpg");
+
+  /* Set a specific height */
+  height: 30vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-quiz-opacity {
+  height: 30vh;
+  background-color: rgb(107, 95, 95, 0.4);
+}
+
+.banner-visit-title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+}
+
+.btn-quiz-home {
+  color: white;
+  background-color: #f9be4f;
+  border: none;
+}
+
+.btn-quiz-home:hover {
+  color: white;
+  background-color: #76b594;
+  border: none;
+}
+
+
+
+.btn-schedule {
+  background-color: #76b594;
+  border: none;
+  border-radius: 0px 0px 0px 0px;
+  cursor: none;
+}
+
+.btn-schedule-check {
+  width: 4vw;
+  background-color: #218380;
+  border: none;
+  border-radius: 0px 0px 0px 0px;
+  font-weight: 550;
+}
