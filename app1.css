@@ -625,3 +625,79 @@ hr {
   background: #f4f4f4;
   color: #b4b3b3;
 }
+
+/* ---------------- adopt me Modal-------------- */
+#pop-up-adopt {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 4em auto;
+  width: 30em;
+  /* height: 27em; */
+  border: 2px #218380 solid;
+  border-radius: 20px;
+  padding: 1em;
+  transform: scale(0.7);
+  opacity: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+#back-drop-adopt {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+
+  z-index: 100;
+}
+.overflow {
+  overflow: hidden;
+}
+#google-in,
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 11em; */
+  height: 2.3em;
+  border-radius: 25px;
+  border: solid 1px #218380;
+}
+#google-in img {
+  width: 25px;
+  padding-left: 0.6em;
+}
+#google-in h4 {
+  font-size: 11px;
+  margin: 0;
+}
+#login {
+  background-color: #218380;
+  color: #fff;
+}
+.btn-wrapper {
+  margin: 1em auto;
+  display: grid;
+  justify-content: center;
+}
+.fade-in-animation {
+  animation: fade-in 0.3s ease-out forwards;
+}
+@keyframes fade-in {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.fade-out-animation {
+  transform: scale(0.2);
+  opacity: 0;
+  transition: transform 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+#close-adopt {
+  cursor: pointer;
+}

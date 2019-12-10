@@ -66,11 +66,11 @@
 
         <form action="" class="login">
             <div class="form-group">
-                <label for="txtname">User Name</label>
+                <label for="txtname">Username</label>
                 <input class="form-control input-border" type="text" name="txtname" />
             </div>
             <div class="form-group">
-                <label for="email">Email Address</label>
+                <label for="email">Password</label>
                 <input class="form-control input-border" type="text" name="txtemail" id="email" />
             </div>
             <div class="checkbox">
@@ -89,6 +89,49 @@
             <a class="text-center mt-4 " href="signup.html">Are you new here?</a>
         </div>
     </div>
+
+                <!------------------------adopt me-popup------------------------------------>
+                <div id="back-drop-adopt" class="hidden"></div>
+                <div id="pop-up-adopt" class="hidden ">
+                    <div id="close-adopt" class="close mt-n2 ">
+                        ×
+                    </div>
+            <div class="container">
+                <div class="raw">
+                    <div class="text-center">
+                        <h3 class="pb-4 pt-4">Thank you for your interest</h3>
+                        <p>Your information has been send to the Shelter.<br>They will contact you as soon as possible</p>
+                        <div class="close-adopt pt-2 pb-2">
+                            <button type="button" id="close-adopt-btn" class="btn btn-primary read-more-btn">OK</button>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <!-- <form action="" class="login">
+                        <div class="form-group">
+                            <label for="txtname">User Name</label>
+                            <input class="form-control input-border" type="text" name="txtname" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input class="form-control input-border" type="text" name="txtemail" id="email" />
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" /> Remember me</label>
+                        </div>
+                    </form>
+                    <div class="btn-wrapper">
+                        <a href="user-profile.html"><button type="submit" class="btn btn-primary read-more-btn">
+                                Login
+                            </button></a>
+                        <h5 class="text-center m-2 text-dark">Or</h5>
+                        <button id="google-in" class="btn btn-light">
+                            <h4>Sign In with Google</h4>
+                            <img src="image/google-sign-in.png" alt="" />
+                        </button>
+                        <a class="text-center mt-4 " href="signup.html">Are you new here?</a>
+                    </div> -->
+                </div>
 
     <main>
         <div class="container text-center container-features mt-5">
@@ -134,9 +177,11 @@
                                 Scedule a visit
                             </button>
                         </div>
+                        <div id="adopt-me-btn">
                         <button type="button" class="btn btn-primary read-more-btn mt-4">
                             Adopt me
                         </button>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -218,10 +263,9 @@
                             <div class="input-group mt-2">
                                 <input type="text" class="form-control" value="Enter your email" />
                                 <!-- <span class="input-group-btn">-->
-                                    <button type="button" 
-                                        class="btn btn-success btn-subscribe">
-                                        Subscribe
-                                    </button>
+                                <button type="button" class="btn btn-success btn-subscribe">
+                                    Subscribe
+                                </button>
                                 <!-- </span> -->
                             </div>
                         </div>
@@ -246,7 +290,7 @@
             });
         });
     </script>
-
+<script src="adopt-me.js"></script>
     <script src="login.js"></script>
 </body>
 
