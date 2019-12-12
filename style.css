@@ -483,3 +483,15 @@ hr {
   border-radius: 0px 0px 0px 0px;
   font-weight: 550;
 }
+
+@media only screen and (max-width: 785px) {
+
+  .read-more-btn {
+    width: 35vw;
+  }
+
+  .banner-quiz {
+    margin-top: 15%;
+  }
+
+}
