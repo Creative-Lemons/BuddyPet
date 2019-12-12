@@ -218,7 +218,7 @@ footer {
 }
 
 .form-control{
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px;
   }  
 
 .social-media {
@@ -355,8 +355,17 @@ hr {
 .background {
   background-color: #f5f5f5;
 }
-
+/*-----------------------------------------------PET PAGE-----------------------------------------------------*/
 /*ZoomIn Hover-Mask Effect*/
+
+.search-1{
+  border-radius: 10px;
+}
+
+.search-2{
+  border-radius: 10px;
+}
+
 .hover-mask a {
   text-align: left;
   font-size: 1.2rem;
