@@ -221,6 +221,10 @@ footer {
   border-radius: 10px;
   }  
 
+  .form-control-pet{
+    border-radius: 20px 0px 0px 20px;
+  }
+
 .social-media {
   color: white;
   font-size: 1.45em;
@@ -771,6 +775,44 @@ hr {
   cursor: pointer;
 }
 
+.adopt-btn {
+  border-radius: 20px;
+  background-color: #218380;
+  width: 13em;
+  color: #fff;
+}
+.adopt-btn:hover,
+.btn-schedule-check:hover {
+  background-color: #76b594;
+}
+#date-adopt-container {
+  padding: 2em 5em;
+}
+.second-container {
+  background-color: #fff;
+  box-shadow: 0 10px 50px 0 rgba(49, 56, 78, 0.08);
+  border-radius: 10px;
+}
+#adopt-me-btn {
+  padding: 2em;
+}
+.date-picker-wrapper {
+  padding: 2em;
+}
+.modal-btn {
+  width: 13vw;
+  background-color: transparent;
+  border: #218380 solid 1px;
+  border-radius: 10px;
+  font-weight: 550;
+  color: #000;
+}
+.modal-btn:hover {
+  background-color: grey;
+  color: white;
+  border: white 1px solid;
+}
+
 
 /*-----------------------------------Banner-Schedule-Visit-----------------------------------*/
 
@@ -824,13 +866,46 @@ hr {
   width: 4vw;
   background-color: #218380;
   border: none;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 20px 20px 0px;
   font-weight: 550;
+  color: #fff;
+}
+iframe {
+  width: 100%;
+  height: 200px;
+}
+
+/*----------navbar hover animation---------------*/
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+nav.stroke ul li a {
+  position: relative;
+  cursor: pointer;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
 }
 
 
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 790px) {
 
   .read-more-btn {
     width: 35vw;

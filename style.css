@@ -484,7 +484,37 @@ hr {
   font-weight: 550;
 }
 
-@media only screen and (max-width: 785px) {
+/*----------navbar hover animation---------------*/
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+nav.stroke ul li a {
+  position: relative;
+  cursor: pointer;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 790px) {
 
   .read-more-btn {
     width: 35vw;
@@ -495,3 +525,4 @@ hr {
   }
 
 }
+
