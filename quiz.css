@@ -52,6 +52,7 @@
 }
 .bar-container {
   position: relative;
+  padding: 0 13em;
 }
 .animation-bar1 {
   animation: progressBar 1s ease-in-out;
@@ -136,7 +137,6 @@
   100% {
     width: 75%;
   }
-
 }
 @-moz-keyframes progressBar3 {
   0% {
@@ -176,4 +176,37 @@
 }
 #result {
   width: 25em;
+}
+
+@media only screen and (max-width: 375px) {
+  #host {
+    width: 3em;
+  }
+  #firstquot {
+    width: 18em;
+  }
+  .answ1 {
+    padding: 0.3em;
+    border-radius: 12px;
+    font-size: 0.8em;
+  }
+  .arrow-a {
+    font-size: 0.7em;
+  }
+  .subscribe {
+    padding: 0 2em 1em;
+  }
+  .fotter-title-name {
+    font-size: 1em;
+  }
+  #burger {
+    display: block;
+    width: 32px;
+  }
+  .bar-container {
+    padding: 0 1em;
+  }
+}
+.hidden {
+  display: none;
 }

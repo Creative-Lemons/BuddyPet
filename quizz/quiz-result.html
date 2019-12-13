@@ -31,20 +31,29 @@
   <body>
     <!------------------------------ Section: Navigation ------------------------------>
     <nav class="navbar navbar-expand-lg shadow sticky-top">
-        <div class="container">
-            <div class="logo-container navbar-brand">
-                <a href="../index.html" class="text-decoration-none"> <h3 class="logo">Buddy pet</h3></a> 
-            </div>
-            <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto pt-4">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Home</a>
-                        <!-- <span class="span fa-stack fa-3x">
+      <div class="container">
+        <div class="logo-container navbar-brand">
+          <a href="../index.html" class="text-decoration-none">
+            <h3 class="logo">Buddy pet</h3></a
+          >
+        </div>
+        <!-- <a class="" href="#"><img class="img-responsive logo" src="image/logo3.png"></a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto pt-4">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Home</a>
+              <!-- <span class="span fa-stack fa-3x">
                         <i class="fas fa-paw fa-stack-2x"></i>
               <a class="nav-link fa fa-stack-1x" href="#"
               >Home
@@ -52,65 +61,79 @@
                 <span class="sr-only">(current)</span>
               </a>
             </span> -->
-                    </li>
-                    <li class="nav-item">
-                        <span class="fa-stack fa-2x">
-                            <i class="fas fa-paw fa-stack-2x icon-nav" style="font-size:35px;"></i>
-                            <span class="fa fa-stack-1x">
-                                <span style="font-size:20px; margin-top:-20px; display:block;">
-                                    <a class="nav-link fa fa-stack-1x nav-weight" href="first-q.html">Quiz
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </span>
-                            </span>
-                        </span>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pet.html">Pet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../shelters.html">Shelters</a>
-                    </li>
-                </ul>
-                <div id="login-btn" class="">
-                    <a class="nav-link">Log In</a>
-                </div>
-            </div>
+            </li>
+            <li class="nav-item">
+              <span class="fa-stack fa-2x">
+                <i
+                  class="fas fa-paw fa-stack-2x icon-nav"
+                  style="font-size:35px;"
+                ></i>
+                <span class="fa fa-stack-1x">
+                  <span
+                    style="font-size:20px; margin-top:-20px; display:block;"
+                  >
+                    <a
+                      class="nav-link fa fa-stack-1x nav-weight"
+                      href="first-q.html"
+                      >Quiz
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </span>
+                </span>
+              </span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pet.html">Pet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../shelters.html">Shelters</a>
+            </li>
+          </ul>
+          <div id="login-btn" class="">
+            <a class="nav-link">Log In</a>
+          </div>
         </div>
+      </div>
     </nav>
     <!------------------------Login-popup------------------------------------>
     <div id="back-drop" class="hidden"></div>
     <div id="pop-up" class="hidden ">
-        <div id="close" class="close mt-n2 ">
-            ×
-        </div>
+      <div id="close" class="close mt-n2 ">
+        ×
+      </div>
 
-        <form action="" class="login">
-            <div class="form-group">
-                <label for="txtname">User Name</label>
-                <input class="form-control input-border" type="text" name="txtname" />
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input class="form-control input-border" type="text" name="txtemail" id="email" />
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" /> Remember me</label>
-            </div>
-        </form>
-        <div class="btn-wrapper">
-            <a href="../user-profile.html"><button type="submit" class="btn btn-primary read-more-btn">
-                    Login
-                </button></a> 
+      <form action="" class="login">
+        <div class="form-group">
+          <label for="txtname">User Name</label>
+          <input class="form-control input-border" type="text" name="txtname" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            class="form-control input-border"
+            type="text"
+            name="txtemail"
+            id="email"
+          />
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" /> Remember me</label>
+        </div>
+      </form>
+      <div class="btn-wrapper">
+        <a href="../user-profile.html"
+          ><button type="submit" class="btn btn-primary read-more-btn">
+            Login
+          </button></a
+        >
         <h5 class="text-center m-2 text-dark">Or</h5>
         <button id="google-in" class="btn btn-light">
-            <h4>Sign In with Google</h4>
-            <img src="../image/google-sign-in.png" alt="" />
+          <h4>Sign In with Google</h4>
+          <img src="../image/google-sign-in.png" alt="" />
         </button>
         <a class="text-center mt-4 " href="../signup.html">Are you new here?</a>
+      </div>
     </div>
-    </div>
-
 
     <div class="container text-center container-features mt-5 mb-3">
       <div>
@@ -130,10 +153,8 @@
       </div>
       <div class=" container  d-flex justify-content-center mt-2 mb-3">
         <p class="col-6 m-4">
-          An Active Personality is one who has a clear idea of how they want the
-          world to be and does not easily tolerate deviations from this ideal.
-          When deviations occur, the active personality aggressively acts to
-          remedy the situation.
+          You have an active lifestyle, which means you like to include physical
+          activities in your everyday routine, such as walking or running.
         </p>
       </div>
       <div class="container">
@@ -158,7 +179,9 @@
                 </a>
               </div>
               <div class="p-4 text-center">
-                <h5><a href="../single-pet.html" class="text-dark">Duksse</a></h5>
+                <h5>
+                  <a href="../single-pet.html" class="text-dark">Duksse</a>
+                </h5>
               </div>
             </div>
           </div>
@@ -207,7 +230,9 @@
                 </a>
               </div>
               <div class="p-4  text-center">
-                <h5><a href="../single-pet.html" class="text-dark">Happy</a></h5>
+                <h5>
+                  <a href="../single-pet.html" class="text-dark">Happy</a>
+                </h5>
               </div>
             </div>
           </div>
@@ -247,15 +272,18 @@
             <h2 class="fotter-title mt-3 mb-3">Subscribe to our newsletter</h2>
 
             <div class="row form-group ">
-                <div class="input-group mt-2">
-                    <input type="text" class="form-control" value="Enter your email" />
-                    <!-- <span class="input-group-btn">-->
-                        <button type="button" 
-                            class="btn btn-success btn-subscribe">
-                            Subscribe
-                        </button>
-                    <!-- </span> -->
-                </div>
+              <div class="input-group mt-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  value="Enter your email"
+                />
+                <!-- <span class="input-group-btn">-->
+                <button type="button" class="btn btn-success btn-subscribe">
+                  Subscribe
+                </button>
+                <!-- </span> -->
+              </div>
             </div>
           </div>
         </div>
