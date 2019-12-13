@@ -103,36 +103,31 @@
                         <h3 class="pb-4 pt-4">Thank you for your interest</h3>
                         <p>Your information has been send to the Shelter.<br>They will contact you as soon as possible</p>
                         <div class="close-adopt pt-2 pb-2">
-                            <button type="button" id="close-adopt-btn" class="btn btn-primary read-more-btn">OK</button>
+                            <button type="button" id="close-adopt-btn" class="btn  modal-btn">OK</button>
                         </div>
                     </div>
                 </div>
-                    </div>
-                    <!-- <form action="" class="login">
-                        <div class="form-group">
-                            <label for="txtname">User Name</label>
-                            <input class="form-control input-border" type="text" name="txtname" />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input class="form-control input-border" type="text" name="txtemail" id="email" />
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" /> Remember me</label>
-                        </div>
-                    </form>
-                    <div class="btn-wrapper">
-                        <a href="user-profile.html"><button type="submit" class="btn btn-primary read-more-btn">
-                                Login
-                            </button></a>
-                        <h5 class="text-center m-2 text-dark">Or</h5>
-                        <button id="google-in" class="btn btn-light">
-                            <h4>Sign In with Google</h4>
-                            <img src="image/google-sign-in.png" alt="" />
-                        </button>
-                        <a class="text-center mt-4 " href="signup.html">Are you new here?</a>
-                    </div> -->
+            </div>
+                    
                 </div>
+                   <!------------------------set visit-popup------------------------------------>
+                   <div id="back-drop-adopt" class="hidden"></div>
+                   <div id="pop-up-set-vist" class="hidden ">
+                       <div id="close-visit" class="close mt-n2 ">
+                           ×
+                       </div>
+               <div class="container">
+                   <div class="raw">
+                       <div class="text-center">
+                           <h3 class="pb-4 pt-4">Looking forward to seeing you on this date !</h3>
+                           <div class="close-visit pt-2 pb-2">
+                               <button type="button" id="close-visit-btn" class="btn  modal-btn">OK</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+                       
+                   </div>
 
     <main>
             <div class="text-center mt-4 container">
@@ -145,7 +140,7 @@
         <div class=" container-features ">
 
             <div class="p-4 mt-3 mb-2 about-pet-background">
-                <div class="row pr-3">
+                <div class="row ">
                     <div class="col-1"></div>
                     <div class="col-md-5">
                         <div>
@@ -156,9 +151,9 @@
                     
                     <div class="col-md-4 mt-1">
                             <i class="fas fa-comment-dots"></i>
-                            <p class="title-single-animal">Hello, I am <b>Brownie!</b></hp>
-                                <div class="col-md-10 p-0"><hr /></div>
-                        <div class="">
+                            <p class="title-single-animal">Hello, I'm <b>Brownie!</b></hp>
+                        <hr/>
+                        <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
                                     <p class="pet-info-title"><b>Age</b></p>
@@ -166,7 +161,7 @@
                                     <p class="pet-info-title"><b>Gender</b></p>
                                     <p class="pet-info-title"><b>Personality</b></p>
                                     <p class="pet-info-title"><b>Shelter</b></p>
-                                    <p class="pet-info-title"><b>Availability</b></p>
+                                    <!-- <p class="pet-info-title"><b>Availability</b></p> -->
                                         
                                 </div>
                                 <div class="col-md-6">
@@ -175,17 +170,30 @@
                                         <p class="pet-info-text">Male</p>
                                         <p class="pet-info-text">Active</p>
                                         <p class="pet-info-text">Dyreværnet</p>
-                                        <p class="pet-info-text">
+                                        <!-- <p class="pet-info-text">
                                             <i class="far fa-check-circle font-awsome mr-2"></i>Available!!
-                                        </p>
+                                        </p> -->
                                     </div>
+                                 
                             </div>
                         </div>
+
+                        
                     </div>
-                        <div class="col-12 text-center">
+                   
+                        <div id='date-adopt-container' class="col-12  mt-4 ">
+                               <div class="second-container text-center d-flex justify-content-center align-items-center">
+                            <div class="date-picker-wrapper">  
+                                        <div class="input-group">
+                                            <input type="text" id="my_date_picker" class="form-control" placeholder="Click here to visit me" />
+                                            <button type="button" class="btn btn-schedule-check"><i class="fas fa-check"></i></button>                                                                                         
+                                        </div>
+                                    </div>
+                                    <h4>Or</h4>
                             <div id="adopt-me-btn">
-                                 <button type="button" class="btn btn-primary read-more-btn mt-3">Adopt me</button>
+                                 <button type="button" class="btn  adopt-btn ">Adopt me</button>
                             </div>
+                        </div>
                         </div>
                 </div>
             </div>
@@ -227,30 +235,6 @@
             </div>
         </section>
 
-        <div class="banner-pet">
-            <div class="home-quiz-opacity">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-md-5 text-center">
-                            <h2 class="banner-visit-title">Schedule a visit and meet your future buddy!</h2>
-                                    <div class="form-group">
-                                            <div class="input-group">
-                                            
-                                                <!-- <span class="input-group-btn">-->
-                                                    <button class="btn btn-schedule">
-                                                        <i class="far fa-calendar-alt text-white"></i>
-                                                    </button>
-                                                    <input type="text" id="my_date_picker" class="form-control" value="select a date" />
-                                                <!-- </span> -->
-                                                    <button type="button" class="btn btn-primary btn-schedule-check"><i class="fas fa-check"></i></button>                                                                                          
-                                            </div>
-                             </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <footer>
             <div class="container">
