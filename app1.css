@@ -975,15 +975,16 @@ nav.stroke ul li a:hover:after {
 .hidden {
   display: none;
 }
-  /*-----single-pet-----*/
-  .second-container {
-    flex-direction: column;
-  }
-  #date-adopt-container {
-    padding: 2em;
-  }
-  .btn-schedule-check {
-    width: unset;
-  }
+
+ /*-----single-pet-----*/
+ .second-container {
+  flex-direction: column;
+}
+#date-adopt-container {
+  padding: 2em;
+}
+.btn-schedule-check {
+  width: unset;
+}
 
 }
