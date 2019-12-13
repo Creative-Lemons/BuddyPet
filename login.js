@@ -5,6 +5,9 @@ function addAnimation() {
   document.querySelector("#back-drop").classList.remove("hidden");
   document.querySelector("body").classList.add("overflow");
 }
+
+document.querySelector("#back-drop").addEventListener("click", closeModal);
+
 document.querySelector("#close").addEventListener("click", closeModal);
 function closeModal() {
   console.log("hi");

@@ -715,6 +715,23 @@ hr {
   background-color: #fff;
   z-index: 100;
 }
+
+#pop-up-set-vist {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 4em auto;
+  width: 30em;
+  /* height: 27em; */
+  border: 2px #218380 solid;
+  border-radius: 20px;
+  padding: 1em;
+  transform: scale(0.7);
+  opacity: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
 #back-drop-adopt {
   width: 100vw;
   height: 100vh;
@@ -723,6 +740,16 @@ hr {
 
   z-index: 100;
 }
+
+#back-drop-adopt2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+
+  z-index: 100;
+}
+
 .overflow {
   overflow: hidden;
 }
