@@ -986,5 +986,13 @@ nav.stroke ul li a:hover:after {
 .btn-schedule-check {
   width: unset;
 }
+   .profile-btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
+  .pet-info-text {
+    font-size: 0.8em;
+  }
 
 }
