@@ -174,9 +174,6 @@
 .p-container {
   text-align: justify;
 }
-#result {
-  width: 25em;
-}
 
 @media only screen and (max-width: 375px) {
   #host {
